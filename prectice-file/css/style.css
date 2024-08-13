@@ -1,0 +1,27 @@
+.card{
+        margin: 0 auto;
+        padding: 2rem;
+        width: 300px;
+        background-color: blueviolet;
+        text-align: center;
+        border-radius: 10px;
+        position: relative;
+}
+.card::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 17%, rgba(32,255,0,1) 33%, rgba(0,255,250,1) 48%, rgba(0,24,255,1) 63%, rgba(208,0,255,1) 80%, rgba(255,0,71,1) 96%);
+ }
+.card::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
